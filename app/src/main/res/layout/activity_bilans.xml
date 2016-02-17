@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.example.satu.mediapp.BilansActivity"
+    android:background="@drawable/eskulap1"
+    >
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        android:id="@+id/view">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:id="@+id/buttons_frequency"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_below="@+id/view"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <Button
+            android:layout_width="108dp"
+            android:layout_height="wrap_content"
+            android:text="Rano"
+            android:id="@+id/button_moring"
+            android:background="@drawable/buttonshape1"/>
+
+        <Button
+            android:layout_width="108dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="W poludnie"
+            android:id="@+id/button_midday"
+            android:background="@drawable/buttonshape1"/>
+
+        <Button
+            android:layout_width="108dp"
+            android:layout_height="wrap_content"
+            android:text="Wieczorem"
+            android:id="@+id/button_evening"
+            android:background="@drawable/buttonshape1"   />
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Wprowadź pomiar"
+        android:id="@+id/button_put_result"
+        android:layout_below="@+id/buttons_frequency"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="46dp"
+        android:background="@drawable/standard_buttons_selector"
+        android:shadowColor="#A6A3A8"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Przyjrzyj historie"
+
+        android:id="@+id/button_meausure_history"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/standard_buttons_selector"
+        android:shadowColor="#A6A3A8"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Wyczyść historie"
+        android:id="@+id/button_clear_history"
+        android:layout_below="@+id/button_meausure_history"
+        android:layout_alignRight="@+id/button_meausure_history"
+        android:layout_alignEnd="@+id/button_meausure_history"
+        android:layout_marginTop="36dp"
+        android:layout_alignLeft="@+id/button_meausure_history"
+        android:layout_alignStart="@+id/button_meausure_history"
+        android:background="@drawable/standard_buttons_selector"
+        android:shadowColor="#A6A3A8"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+        />
+
+
+</RelativeLayout>
